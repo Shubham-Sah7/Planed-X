@@ -1,0 +1,57 @@
+/* Programme Management Clean Light SaaS Design Tokens */
+/* ==================================================== */
+
+:root {
+  /* ─── Light SaaS Canvas & Surfaces ───────────────────────── */
+  --bg-canvas: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f1f5f9;
+  --bg-muted: #f8fafc;
+  --border-subtle: #e2e8f0;
+  --border-light: #f1f5f9;
+  --border-darker: #cbd5e1;
+
+  /* ─── Typography Colors ──────────────────────────────────── */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+
+  /* ─── Brand & Interactive ────────────────────────────────── */
+  --brand-blue: #2563eb;
+  --brand-blue-hover: #1d4ed8;
+  --brand-blue-light: #eff6ff;
+  --brand-blue-border: #bfdbfe;
+
+  /* ─── Status Colors ──────────────────────────────────────── */
+  --status-not-started: #94a3b8;
+  --status-not-started-bg: #f1f5f9;
+  --status-in-progress: #2563eb;
+  --status-in-progress-bg: #eff6ff;
+  --status-complete: #10b981;
+  --status-complete-bg: #ecfdf5;
+  --status-blocked: #ef4444;
+  --status-blocked-bg: #fef2f2;
+  --status-at-risk: #f59e0b;
+  --status-at-risk-bg: #fffbeb;
+
+  /* ─── Critical Path ──────────────────────────────────────── */
+  --critical: #ef4444;
+  --critical-bg: #fef2f2;
+
+  /* ─── Milestone ──────────────────────────────────────────── */
+  --milestone: #f59e0b;
+  --milestone-bg: #fffbeb;
+
+  /* ─── Gantt Dimensions ───────────────────────────────────── */
+  --gantt-row-height: 40px;
+  --gantt-row-height-group: 42px;
+  --gantt-bar-height: 20px;
+  --gantt-bar-radius: 4px;
+  --gantt-grid-line: #f1f5f9;
+  --gantt-header-bg: #ffffff;
+  --gantt-wbs-width: 480px;
+
+  /* ─── Drawer ─────────────────────────────────────────────── */
+  --drawer-width: 420px;
+}
