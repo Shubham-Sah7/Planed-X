@@ -45,6 +45,7 @@ export function ProgrammeToolbar() {
     setNetworkZoom,
     autoLayoutMode,
     setAutoLayoutMode,
+    setAttentionFilter,
   } = useProgramme();
   const [filterPanelOpen, setFilterPanelOpen] = useState(false);
   const [autoLayoutOpen, setAutoLayoutOpen] = useState(false);
@@ -247,7 +248,7 @@ export function ProgrammeToolbar() {
                       type="checkbox"
                       checked={state.attentionFilter === "blocked"}
                       onChange={() =>
-                        useProgramme().setAttentionFilter(
+                        setAttentionFilter(
                           state.attentionFilter === "blocked" ? "all" : "blocked"
                         )
                       }
@@ -369,7 +370,7 @@ export function ProgrammeToolbar() {
                     <input
                       type="checkbox"
                       checked={state.attentionFilter === "blocked"}
-                      onChange={() => useProgramme().setAttentionFilter(state.attentionFilter === "blocked" ? "all" : "blocked")}
+                      onChange={() => setAttentionFilter(state.attentionFilter === "blocked" ? "all" : "blocked")}
                       className="rounded text-blue-600 focus:ring-blue-500"
                     />
                     <span>Blocked Tasks Only</span>
