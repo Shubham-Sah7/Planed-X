@@ -1,14 +1,12 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
+import { type NextRequest, NextResponse } from 'next/server'
 
-export default clerkMiddleware();
+// No authentication — all routes are public
+export function proxy(_request: NextRequest) {
+  return NextResponse.next()
+}
 
 export const config = {
   matcher: [
-    // Skip Next.js internals and all static files, unless found in search params
     '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
-    // Always run for Clerk's auto-proxy path
-    '/__clerk/(.*)',
-    // Always run for API routes
-    '/(api|trpc)(.*)',
   ],
-};
+}
