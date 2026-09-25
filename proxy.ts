@@ -1,9 +1,11 @@
 import { type NextRequest, NextResponse } from 'next/server'
 
 // No authentication — all routes are public
-export function proxy(_request: NextRequest) {
+export default function proxy(_request: NextRequest) {
   return NextResponse.next()
 }
+
+export { proxy }
 
 export const config = {
   matcher: [
